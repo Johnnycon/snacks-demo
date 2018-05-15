@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+
+
+// Import the initial variables I'll need, might be a better way to do this
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+
+// override colors
+$blue:      #4056A1;
+$lightblue: #C5CBE3;
+$red:       #F13C20;
+$cream:     #EFE2BA;
+$yellow:    #D79922;
+
+
+$primary: $blue;
+$info:    $lightblue;
+$success: $red;
+$warning: $yellow;
+$danger:  $cream;
+
+// $blue: #6599FF;
+// $primary: $blue;
+
+// Override fonts
+$family-sans-serif:  "Roboto","Oswald","Montserrat", sans-serif;
+$family-primary: $family-sans-serif;
+
+// My regular CSS
+.my-section {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-height: 150px;
+}
+
+.feature-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  height: 90px;
+}
+
+
+
+// Import the rest of Bulma
+@import "~bulma/bulma";
